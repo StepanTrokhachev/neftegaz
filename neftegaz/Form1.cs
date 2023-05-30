@@ -653,5 +653,35 @@ namespace neftegaz
         {
             readExcel12();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void дегазация_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void химреагенты_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
