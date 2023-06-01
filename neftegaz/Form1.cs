@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
+using TextBox = Microsoft.Office.Interop.Excel.TextBox;
 
 namespace neftegaz
 {
     public partial class Form1 : Form
     {
+        public System.Windows.Forms.Label textBox1 { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -217,15 +220,7 @@ namespace neftegaz
             label32.Text = ws.Cells[4, 5].Text;
             label33.Text = ws.Cells[4, 5].Text;
         }
-        private void readExcel4() //опорож (шлейфы)
-        {
-            string filePath = "C:\\file.xlsx";
-            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-            Workbook wb;
-            Worksheet ws;
-            wb = excel.Workbooks.Open(filePath);
-            ws = wb.Worksheets[4];
-        }
+        
         private void readExcel5() //опорож (оборудование)
         {
             string filePath = "C:\\file.xlsx";
@@ -683,5 +678,65 @@ namespace neftegaz
         {
 
         }
+
+        private void гди_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label74_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void readExcel4() //опорож (шлейфы)
+        {
+            string filePath = "C:\\file.xlsx";
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            Workbook wb;
+            Worksheet ws;
+            wb = excel.Workbooks.Open(filePath);
+            ws = wb.Worksheets[7];
+            tableLayoutPanel1.RowCount = 10;
+            tableLayoutPanel1.ColumnCount = 10;
+            for (int i = 1; i <= 8; ++i)
+            {
+                for (int j = 1; j <= 8; ++j)
+                {
+                    textBox1 = new System.Windows.Forms.Label();
+                    //textBox1.AcceptsReturn = true;
+                    //textBox1.AcceptsTab = true;
+                    //textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+                    //textBox1.Multiline = true;
+                    //textBox1.Text = ws.Cells[i, j].Text;
+                    textBox1.SuspendLayout();
+                    tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+                    
+                    tableLayoutPanel1.Controls.Add(textBox1, i, j);
+                    textBox1.ResumeLayout(false);
+                    textBox1.PerformLayout();
+                    
+                }
+                   
+            }
+        }
+
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+       
+        }
+
     }
 }
