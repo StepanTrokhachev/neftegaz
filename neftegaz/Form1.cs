@@ -710,9 +710,9 @@ namespace neftegaz
             ws = wb.Worksheets[7];
             tableLayoutPanel1.RowCount = 10;
             tableLayoutPanel1.ColumnCount = 10;
-            for (int i = 1; i <= 8; ++i)
+            for (int i = 1; i <= 5; ++i)
             {
-                for (int j = 1; j <= 8; ++j)
+                for (int j = 1; j <= 5; ++j)
                 {
                     textBox1 = new System.Windows.Forms.Label();
                     //textBox1.AcceptsReturn = true;
@@ -722,8 +722,7 @@ namespace neftegaz
                     //textBox1.Text = ws.Cells[i, j].Text;
                     textBox1.SuspendLayout();
                     tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-                    
-                    tableLayoutPanel1.Controls.Add(textBox1, i, j);
+                    tableLayoutPanel1.Controls.Add(textBox1, j, i);
                     textBox1.ResumeLayout(false);
                     textBox1.PerformLayout();
                     
