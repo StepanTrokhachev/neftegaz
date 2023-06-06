@@ -578,7 +578,7 @@ namespace neftegaz
             richTextBox12.Text = c14;
             for (int i=12; i<=13; i++)
             {
-                b14 += (ws.Cells[i, 2].Text + " | " + ws.Cells[i, 3].Text + " | " + ws.Cells[i, 4].Text + " | " + ws.Cells[i, 5].Text);
+                b14 += (ws.Cells[i, 2].Text + "\n" + ws.Cells[i, 3].Text + "\n" + ws.Cells[i, 4].Text + "\n" + ws.Cells[i, 5].Text);
                 b14 += "\n";
 
             }
@@ -708,21 +708,16 @@ namespace neftegaz
             Worksheet ws;
             wb = excel.Workbooks.Open(filePath);
             ws = wb.Worksheets[7];
-            tableLayoutPanel1.RowCount = 10;
-            tableLayoutPanel1.ColumnCount = 10;
+          //  tableLayoutPanel1.RowCount = 10;
+           // tableLayoutPanel1.ColumnCount = 10;
             for (int i = 1; i <= 5; ++i)
             {
                 for (int j = 1; j <= 5; ++j)
                 {
                     textBox1 = new System.Windows.Forms.Label();
-                    //textBox1.AcceptsReturn = true;
-                    //textBox1.AcceptsTab = true;
-                    //textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-                    //textBox1.Multiline = true;
-                    //textBox1.Text = ws.Cells[i, j].Text;
                     textBox1.SuspendLayout();
-                    tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-                    tableLayoutPanel1.Controls.Add(textBox1, j, i);
+                    //tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+                    //tableLayoutPanel1.Controls.Add(textBox1, j, i);
                     textBox1.ResumeLayout(false);
                     textBox1.PerformLayout();
                     
@@ -737,5 +732,9 @@ namespace neftegaz
        
         }
 
+        private void Растворимость_газа_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

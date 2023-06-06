@@ -39,7 +39,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Газ = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,7 +51,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Конденсат = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -87,11 +85,6 @@
             this.richTextBox19 = new System.Windows.Forms.RichTextBox();
             this.richTextBox18 = new System.Windows.Forms.RichTextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.шлейфы = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.оборудование = new System.Windows.Forms.TabPage();
-            this.button16 = new System.Windows.Forms.Button();
             this.дегазация = new System.Windows.Forms.TabPage();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -188,8 +181,6 @@
             this.richTextBox59 = new System.Windows.Forms.RichTextBox();
             this.richTextBox58 = new System.Windows.Forms.RichTextBox();
             this.button13 = new System.Windows.Forms.Button();
-            this.расчет_плотности = new System.Windows.Forms.TabPage();
-            this.button14 = new System.Windows.Forms.Button();
             this.расчет_з = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.richTextBox17 = new System.Windows.Forms.RichTextBox();
@@ -211,15 +202,12 @@
             this.Газ.SuspendLayout();
             this.Конденсат.SuspendLayout();
             this.гди.SuspendLayout();
-            this.шлейфы.SuspendLayout();
-            this.оборудование.SuspendLayout();
             this.дегазация.SuspendLayout();
             this.химреагенты.SuspendLayout();
             this.отбор_газ.SuspendLayout();
             this.отбор_конденсат.SuspendLayout();
             this.Клапана.SuspendLayout();
             this.унос.SuspendLayout();
-            this.расчет_плотности.SuspendLayout();
             this.расчет_з.SuspendLayout();
             this.Растворимость_газа.SuspendLayout();
             this.SuspendLayout();
@@ -242,15 +230,12 @@
             this.tabControl1.Controls.Add(this.Газ);
             this.tabControl1.Controls.Add(this.Конденсат);
             this.tabControl1.Controls.Add(this.гди);
-            this.tabControl1.Controls.Add(this.шлейфы);
-            this.tabControl1.Controls.Add(this.оборудование);
             this.tabControl1.Controls.Add(this.дегазация);
             this.tabControl1.Controls.Add(this.химреагенты);
             this.tabControl1.Controls.Add(this.отбор_газ);
             this.tabControl1.Controls.Add(this.отбор_конденсат);
             this.tabControl1.Controls.Add(this.Клапана);
             this.tabControl1.Controls.Add(this.унос);
-            this.tabControl1.Controls.Add(this.расчет_плотности);
             this.tabControl1.Controls.Add(this.расчет_з);
             this.tabControl1.Controls.Add(this.Растворимость_газа);
             this.tabControl1.Location = new System.Drawing.Point(11, 53);
@@ -342,7 +327,6 @@
             // 
             // Газ
             // 
-            this.Газ.Controls.Add(this.button2);
             this.Газ.Controls.Add(this.label7);
             this.Газ.Controls.Add(this.label6);
             this.Газ.Controls.Add(this.label5);
@@ -364,34 +348,21 @@
             this.Газ.Text = "ИТОГО (ГАЗ)";
             this.Газ.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(967, 618);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 50);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Информация из приказа Минэнерго";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(880, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.Size = new System.Drawing.Size(0, 16);
             this.label7.TabIndex = 11;
-            this.label7.Text = "label7";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1051, 89);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.Size = new System.Drawing.Size(0, 16);
             this.label6.TabIndex = 10;
-            this.label6.Text = "label6";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
@@ -399,27 +370,24 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(880, 89);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.Size = new System.Drawing.Size(0, 16);
             this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(739, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(0, 16);
             this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(500, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
             // 
             // richTextBox5
             // 
@@ -472,13 +440,11 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(61, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
             // 
             // Конденсат
             // 
-            this.Конденсат.Controls.Add(this.button4);
             this.Конденсат.Controls.Add(this.label14);
             this.Конденсат.Controls.Add(this.label13);
             this.Конденсат.Controls.Add(this.label12);
@@ -499,16 +465,6 @@
             this.Конденсат.TabIndex = 2;
             this.Конденсат.Text = "ИТОГО (КОНДЕНСАТ)";
             this.Конденсат.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(972, 623);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 46);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Информация из приказа Минэнерго";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -830,73 +786,6 @@
             this.button7.Text = "Показать данные";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // шлейфы
-            // 
-            this.шлейфы.Controls.Add(this.tableLayoutPanel1);
-            this.шлейфы.Controls.Add(this.button15);
-            this.шлейфы.Location = new System.Drawing.Point(4, 25);
-            this.шлейфы.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.шлейфы.Name = "шлейфы";
-            this.шлейфы.Size = new System.Drawing.Size(1301, 677);
-            this.шлейфы.TabIndex = 4;
-            this.шлейфы.Text = "Опорожнение (Шлейфы)";
-            this.шлейфы.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(93, 27);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(0, 0);
-            this.tableLayoutPanel1.TabIndex = 1;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(1205, 606);
-            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(91, 63);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // оборудование
-            // 
-            this.оборудование.Controls.Add(this.button16);
-            this.оборудование.Location = new System.Drawing.Point(4, 25);
-            this.оборудование.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.оборудование.Name = "оборудование";
-            this.оборудование.Size = new System.Drawing.Size(1301, 677);
-            this.оборудование.TabIndex = 5;
-            this.оборудование.Text = "Опорожнение (Оборудование)";
-            this.оборудование.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(1188, 614);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(108, 54);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // дегазация
             // 
@@ -1312,72 +1201,64 @@
             this.label62.AutoSize = true;
             this.label62.Location = new System.Drawing.Point(379, 42);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(51, 16);
+            this.label62.Size = new System.Drawing.Size(0, 16);
             this.label62.TabIndex = 13;
-            this.label62.Text = "label62";
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.Location = new System.Drawing.Point(291, 12);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(51, 16);
+            this.label61.Size = new System.Drawing.Size(0, 16);
             this.label61.TabIndex = 12;
-            this.label61.Text = "label61";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
             this.label60.Location = new System.Drawing.Point(1187, 84);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(51, 16);
+            this.label60.Size = new System.Drawing.Size(0, 16);
             this.label60.TabIndex = 11;
-            this.label60.Text = "label60";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
             this.label59.Location = new System.Drawing.Point(1057, 84);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(51, 16);
+            this.label59.Size = new System.Drawing.Size(0, 16);
             this.label59.TabIndex = 10;
-            this.label59.Text = "label59";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
             this.label58.Location = new System.Drawing.Point(1057, 53);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(51, 16);
+            this.label58.Size = new System.Drawing.Size(0, 16);
             this.label58.TabIndex = 9;
-            this.label58.Text = "label58";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(924, 84);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(51, 16);
+            this.label57.Size = new System.Drawing.Size(0, 16);
             this.label57.TabIndex = 8;
-            this.label57.Text = "label57";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
             this.label56.Location = new System.Drawing.Point(113, 89);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(51, 16);
+            this.label56.Size = new System.Drawing.Size(0, 16);
             this.label56.TabIndex = 7;
-            this.label56.Text = "label56";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(23, 89);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(51, 16);
+            this.label55.Size = new System.Drawing.Size(0, 16);
             this.label55.TabIndex = 6;
-            this.label55.Text = "label55";
             // 
             // button10
             // 
@@ -1606,27 +1487,24 @@
             this.label76.AutoSize = true;
             this.label76.Location = new System.Drawing.Point(379, 10);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(51, 16);
+            this.label76.Size = new System.Drawing.Size(0, 16);
             this.label76.TabIndex = 11;
-            this.label76.Text = "label76";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
             this.label75.Location = new System.Drawing.Point(1149, 70);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(51, 16);
+            this.label75.Size = new System.Drawing.Size(0, 16);
             this.label75.TabIndex = 10;
-            this.label75.Text = "label75";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
             this.label74.Location = new System.Drawing.Point(1008, 70);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(51, 16);
+            this.label74.Size = new System.Drawing.Size(0, 16);
             this.label74.TabIndex = 9;
-            this.label74.Text = "label74";
             this.label74.Click += new System.EventHandler(this.label74_Click);
             // 
             // label73
@@ -1634,27 +1512,24 @@
             this.label73.AutoSize = true;
             this.label73.Location = new System.Drawing.Point(863, 70);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(51, 16);
+            this.label73.Size = new System.Drawing.Size(0, 16);
             this.label73.TabIndex = 8;
-            this.label73.Text = "label73";
             // 
             // label72
             // 
             this.label72.AutoSize = true;
             this.label72.Location = new System.Drawing.Point(176, 70);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(51, 16);
+            this.label72.Size = new System.Drawing.Size(0, 16);
             this.label72.TabIndex = 7;
-            this.label72.Text = "label72";
             // 
             // label71
             // 
             this.label71.AutoSize = true;
             this.label71.Location = new System.Drawing.Point(25, 70);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(51, 16);
+            this.label71.Size = new System.Drawing.Size(0, 16);
             this.label71.TabIndex = 6;
-            this.label71.Text = "label71";
             // 
             // richTextBox57
             // 
@@ -1739,54 +1614,48 @@
             this.label82.AutoSize = true;
             this.label82.Location = new System.Drawing.Point(465, 39);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(51, 16);
+            this.label82.Size = new System.Drawing.Size(0, 16);
             this.label82.TabIndex = 11;
-            this.label82.Text = "label82";
             // 
             // label81
             // 
             this.label81.AutoSize = true;
             this.label81.Location = new System.Drawing.Point(1153, 90);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(51, 16);
+            this.label81.Size = new System.Drawing.Size(0, 16);
             this.label81.TabIndex = 10;
-            this.label81.Text = "label81";
             // 
             // label80
             // 
             this.label80.AutoSize = true;
             this.label80.Location = new System.Drawing.Point(1023, 90);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(51, 16);
+            this.label80.Size = new System.Drawing.Size(0, 16);
             this.label80.TabIndex = 9;
-            this.label80.Text = "label80";
             // 
             // label79
             // 
             this.label79.AutoSize = true;
             this.label79.Location = new System.Drawing.Point(877, 90);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(51, 16);
+            this.label79.Size = new System.Drawing.Size(0, 16);
             this.label79.TabIndex = 8;
-            this.label79.Text = "label79";
             // 
             // label78
             // 
             this.label78.AutoSize = true;
             this.label78.Location = new System.Drawing.Point(119, 90);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(51, 16);
+            this.label78.Size = new System.Drawing.Size(0, 16);
             this.label78.TabIndex = 7;
-            this.label78.Text = "label78";
             // 
             // label77
             // 
             this.label77.AutoSize = true;
             this.label77.Location = new System.Drawing.Point(25, 90);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(51, 16);
+            this.label77.Size = new System.Drawing.Size(0, 16);
             this.label77.TabIndex = 6;
-            this.label77.Text = "label77";
             // 
             // richTextBox62
             // 
@@ -1843,28 +1712,6 @@
             this.button13.Text = "Показать данные";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // расчет_плотности
-            // 
-            this.расчет_плотности.Controls.Add(this.button14);
-            this.расчет_плотности.Location = new System.Drawing.Point(4, 25);
-            this.расчет_плотности.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.расчет_плотности.Name = "расчет_плотности";
-            this.расчет_плотности.Size = new System.Drawing.Size(1301, 677);
-            this.расчет_плотности.TabIndex = 12;
-            this.расчет_плотности.Text = "Расчет плотности";
-            this.расчет_плотности.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(916, 463);
-            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(67, 18);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // расчет_з
             // 
@@ -1946,42 +1793,39 @@
             this.Растворимость_газа.TabIndex = 14;
             this.Растворимость_газа.Text = "Растворимость газа";
             this.Растворимость_газа.UseVisualStyleBackColor = true;
+            this.Растворимость_газа.Click += new System.EventHandler(this.Растворимость_газа_Click);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(163, 358);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 16);
+            this.label23.Size = new System.Drawing.Size(0, 16);
             this.label23.TabIndex = 7;
-            this.label23.Text = "label23";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(21, 358);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(51, 16);
+            this.label22.Size = new System.Drawing.Size(0, 16);
             this.label22.TabIndex = 6;
-            this.label22.Text = "label22";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(64, 297);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 16);
+            this.label21.Size = new System.Drawing.Size(0, 16);
             this.label21.TabIndex = 5;
-            this.label21.Text = "label21";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(608, 57);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 16);
+            this.label20.Size = new System.Drawing.Size(0, 16);
             this.label20.TabIndex = 4;
-            this.label20.Text = "label20";
             // 
             // richTextBox13
             // 
@@ -2053,9 +1897,6 @@
             this.Конденсат.PerformLayout();
             this.гди.ResumeLayout(false);
             this.гди.PerformLayout();
-            this.шлейфы.ResumeLayout(false);
-            this.шлейфы.PerformLayout();
-            this.оборудование.ResumeLayout(false);
             this.дегазация.ResumeLayout(false);
             this.дегазация.PerformLayout();
             this.химреагенты.ResumeLayout(false);
@@ -2068,7 +1909,6 @@
             this.Клапана.PerformLayout();
             this.унос.ResumeLayout(false);
             this.унос.PerformLayout();
-            this.расчет_плотности.ResumeLayout(false);
             this.расчет_з.ResumeLayout(false);
             this.Растворимость_газа.ResumeLayout(false);
             this.Растворимость_газа.PerformLayout();
@@ -2095,7 +1935,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage гди;
         public System.Windows.Forms.TabPage Газ;
         private System.Windows.Forms.Label label8;
@@ -2111,16 +1950,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TabPage шлейфы;
-        private System.Windows.Forms.TabPage оборудование;
         private System.Windows.Forms.TabPage дегазация;
         private System.Windows.Forms.TabPage химреагенты;
         private System.Windows.Forms.TabPage отбор_газ;
         private System.Windows.Forms.TabPage отбор_конденсат;
         private System.Windows.Forms.TabPage Клапана;
         private System.Windows.Forms.TabPage унос;
-        private System.Windows.Forms.TabPage расчет_плотности;
         private System.Windows.Forms.TabPage расчет_з;
         private System.Windows.Forms.TabPage Растворимость_газа;
         private System.Windows.Forms.Button button5;
@@ -2252,10 +2087,6 @@
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 
